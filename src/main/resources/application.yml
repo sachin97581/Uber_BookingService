@@ -1,0 +1,29 @@
+#spring.application.name=uber_BookinService
+#
+#
+#spring.datasource.url=jdbc:mysql://localhost:3306/Uber_Review
+#spring.datasource.username=root
+#spring.datasource.password=sat@0752
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true
+#
+#server.port=7477
+
+#this another way to writing application.property file in application.ylm file type with easy
+
+spring:
+  application:
+    name: uber_BookinService
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Uber_Review
+    username: root
+    password: sat@0752
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8000
+
