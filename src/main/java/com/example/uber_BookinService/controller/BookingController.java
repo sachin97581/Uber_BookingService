@@ -3,11 +3,15 @@ package com.example.uber_BookinService.controller;
 
 import com.example.uber_BookinService.dto.CreateBookingDto;
 import com.example.uber_BookinService.dto.CreateBookingResponseDto;
+import com.example.uber_BookinService.dto.UpdateBookingRequestDto;
+import com.example.uber_BookinService.dto.UpdateBookingResponseDto;
 import com.example.uber_BookinService.service.BookingService;
 import com.example.uber_BookinService.service.BookingServiceImp;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/v1/bookings")
@@ -31,4 +35,14 @@ public class BookingController {
         CreateBookingResponseDto response = bookingService.createBooking(dto);
         return ResponseEntity.ok(response);
     }
+
+
+
+
+    @PatchMapping("/{bookingId}")
+    public ResponseEntity<UpdateBookingResponseDto> updateBooking(@RequestBody UpdateBookingRequestDto requestDto, @PathVariable Long bookingId) {
+        return new ResponseEntity<>(bookingService.updateBooking(requestDto, bookingId), HttpStatus.OK);
+    }
+
+
 }
