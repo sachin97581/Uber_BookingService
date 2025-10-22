@@ -3,6 +3,15 @@
 
 This service manages ride bookings for an Uber-like platform. It is built with **Java 21**, **Spring Boot**, **Gradle**, and uses **Eureka** for service discovery. The service interacts with other microservices (e.g., Location and Socket services) via **Retrofit**.
 
+## Other Microservices
+- **Auth Service**: This service provides secure authentication, JWT-based authorization, and user management for passengers.
+- **Entity Service**: Works as a library which is provides all modules for other services.
+- **Location Service**: Provides nearby driver locations.
+- **WebSocket Service**: WebSocket service for real-time ride request and response handling
+- **Service Discovery**: Acts as a Service Discovery Server using Netflix Eureka. Enabling communication between distributed components.
+- **Review Service**: Manages passenger & Driver Review.
+
+
 ## Features
 
 - **Booking Management**:  
