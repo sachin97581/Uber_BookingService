@@ -11,6 +11,7 @@ This service manages ride bookings for an Uber-like platform. It is built with *
 - **Service Discovery**: Acts as a Service Discovery Server using Netflix Eureka. Enabling communication between distributed components.
 - **Review Service**: Manages passenger & Driver Review.
 
+<img width="1300" height=724" alt="Screenshot 2025-10-22 121201" src="https://github.com/user-attachments/assets/ac8814af-2b31-4a7b-8222-ec7c9e89d819" />
 
 ## Features
 
