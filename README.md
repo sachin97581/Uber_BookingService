@@ -10,7 +10,7 @@ This service manages ride bookings for an Uber-like platform. It is built with *
 - **WebSocket Service**: WebSocket service for real-time ride request and response handling
 - **Service Discovery**: Acts as a Service Discovery Server using Netflix Eureka. Enabling communication between distributed components.
 - **Review Service**: Manages passenger & Driver Review.
-<img width="1475" height="824" alt="Screenshot 2025-10-22 121201" src="https://github.com/user-attachments/assets/de79f840-2e81-4bbb-9a46-f25242cbc16a" />
+<img width="1375" height="724" alt="Screenshot 2025-10-22 121201" src="https://github.com/user-attachments/assets/de79f840-2e81-4bbb-9a46-f25242cbc16a" />
 
 
 ## Features
